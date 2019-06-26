@@ -1,0 +1,17 @@
+logs
+target
+/.gradle
+/.idea
+/.iml
+/*.iml
+/.tmpBin
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/.cache-main
+/.cache-tests
+/public/media
+/RUNNING_PID
+/bin/
+/conf/application.conf
