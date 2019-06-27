@@ -1,6 +1,5 @@
 # TechGen Blockchain
 ![TechGen](logo.png "TechGen")
-TechGen blockchain
 
 ## Build
 1. sbt
