@@ -1,4 +1,5 @@
 # TechGen
+![TechGen](logo.png "TechGen")
 TechGen blockchain
 
 ## Build
