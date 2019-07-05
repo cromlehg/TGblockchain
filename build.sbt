@@ -28,7 +28,7 @@ libraryDependencies ++= Seq(
 
 exportJars := true
 
-mainClass in (Compile, packageBin) := Some("musson.BDApp")
+mainClass in (Compile, packageBin) := Some("techgen.TechGen")
 
 enablePlugins(JavaAppPackaging)
 
