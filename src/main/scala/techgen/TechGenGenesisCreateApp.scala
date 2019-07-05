@@ -4,7 +4,7 @@ import techgen.blocks.BDBlock
 import scorex.core.transaction.state.PrivateKey25519Companion
 
 
-object GenesisCreateApp extends App {
+object TechGenGenesisCreateApp extends App {
 
   val genesisAccount = PrivateKey25519Companion.generateKeys("genesis".getBytes)
 

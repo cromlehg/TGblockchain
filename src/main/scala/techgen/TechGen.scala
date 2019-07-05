@@ -1,7 +1,7 @@
 package techgen
 
 import akka.actor.{ActorRef, Props}
-import techgen.GenesisCreateApp.block
+import techgen.TechGenGenesisCreateApp.block
 import techgen.NoveViewHolder.NVHSettings
 import techgen.api.BDApiRoute
 import techgen.blocks.{BDBlock, BDBlockSerializer}
@@ -20,7 +20,7 @@ import scala.concurrent.duration._
 import scala.io.Source
 import scala.language.postfixOps
 
-class BDApp(configPath: String) extends {
+class TechGen(configPath: String) extends {
   private val nvhSettings = NVHSettings.read(Some(configPath))
   override implicit val settings: ScorexSettings = nvhSettings.scorexSettings
   override protected val features: Seq[PeerFeature] = Seq()
@@ -69,15 +69,15 @@ class BDApp(configPath: String) extends {
   }
 }
 
-object BDApp {
+object TechGen {
 
   def main(args: Array[String]) {
 
     args.headOption match {
       case Some(config) =>
-        new BDApp(config).run()
+        new TechGen(config).run()
       case _ =>
-        new BDApp("src/main/resources/node1.conf").run()
+        new TechGen("src/main/resources/node1.conf").run()
         //new BDApp("src/main/resources/node2.conf").run()
     }
 
