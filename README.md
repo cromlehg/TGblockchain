@@ -1,6 +1,8 @@
 # TechGen Blockchain
 ![TechGen](logo.png "TechGen")
 
+http://techgensociety.com
+
 ## Build
 1. sbt
 2. rpm:packageBin
