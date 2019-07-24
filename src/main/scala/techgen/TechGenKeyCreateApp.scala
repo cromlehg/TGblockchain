@@ -8,7 +8,7 @@ import scorex.core.transaction.state.PrivateKey25519
 import scorex.core.transaction.state.PrivateKey25519Serializer
 import scorex.core.transaction.box.proposition.{ProofOfKnowledgeProposition, PublicKey25519Proposition}
 
-object KeysCreateApp extends App with ScorexEncoding {
+object TechGenKeysCreateApp extends App with ScorexEncoding {
 
   val (priv: PrivateKey25519, pub: PublicKey25519Proposition) =
      PrivateKey25519Companion.generateKeys("genesis".getBytes)

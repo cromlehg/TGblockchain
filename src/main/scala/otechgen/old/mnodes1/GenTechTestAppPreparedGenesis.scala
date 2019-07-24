@@ -3,7 +3,7 @@ package otechgen.old.mnodes1
 import otechgen.old._
 import play.api.libs.json.Json
 
-object TestAppPreparedGenesis1 extends App {
+object GenTechTestAppPreparedGenesis1 extends App {
 
   val genesisStr =
     """

@@ -5,7 +5,7 @@ import scorex.core.transaction.state.PrivateKey25519Companion
 
 import scala.language.postfixOps
 
-object GenBlockCreator extends App {
+object TechGenBlockCreator extends App {
 
   val (privKey, pubKey) = PrivateKey25519Companion.generateKeys("genesis".getBytes)
 

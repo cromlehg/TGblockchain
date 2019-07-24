@@ -1,6 +1,6 @@
 package otechgen.old
 
-object TestApp extends App {
+object GenTechTestApp extends App {
 
   println("App start")
 

@@ -16,7 +16,7 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>/tmp/musson/${logName}.log</file>
+        <file>/tmp/techgen/${logName}.log</file>
         <append>false</append>
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>${logback.stdout.level:-INFO}</level>
