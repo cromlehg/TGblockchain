@@ -4,12 +4,13 @@
 https://techgensociety.com
 
 ## Build
-1. sbt
-2. rpm:packageBin
-3. create temporary folder: mkdir /tmp/techgen
-4. install crated in (2) rpm: sudo rpm -ivh /path/to/rpm
-5. run in background: /usr/bin/bd-app &
-6. see logs in /tmp/techgen 
+1. install scala
+2. sbt
+3. rpm:packageBin
+4. create temporary folder: mkdir /tmp/techgen
+5. install crated in (2) rpm: sudo rpm -ivh /path/to/rpm
+6. run in background: /usr/bin/bd-app &
+7. see logs in /tmp/techgen 
 
 
 ## Краткое описание блокчейна TechGen 
