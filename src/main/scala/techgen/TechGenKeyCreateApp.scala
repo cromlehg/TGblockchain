@@ -13,6 +13,7 @@ object TechGenKeysCreateApp extends App with ScorexEncoding {
   val (priv: PrivateKey25519, pub: PublicKey25519Proposition) =
      PrivateKey25519Companion.generateKeys("genesis".getBytes)
      
+   println("Keys: ")
    println("PRIVATE: ")
    println(encoder.encode(priv.privKeyBytes))
    println("PUBLIC: ")
