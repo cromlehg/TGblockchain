@@ -8,7 +8,7 @@ scalaVersion := "2.12.8"
 
 resolvers ++= Seq("Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/",
   "SonaType" at "https://oss.sonatype.org/content/groups/public",
-  "Typesafe maven releases" at "http://repo.typesafe.com/typesafe/maven-releases/",
+  "Typesafe maven releases" at "https://repo.typesafe.com/typesafe/maven-releases/",
   "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/")
 
 val scorexVersion = "4bc8c385-SNAPSHOT"
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.5" % "test",
   "org.msgpack" %% "msgpack-scala" % "0.8.13",
   "org.scalacheck" %% "scalacheck" % "1.13.+" % "test",
-  
+
   "com.typesafe.play" %% "play-json" % "2.7.1",
   "com.typesafe.play" %% "play-ahc-ws-standalone" % "2.0.1",
   "com.typesafe.play" %% "play-ws-standalone-json" % "2.0.1"
