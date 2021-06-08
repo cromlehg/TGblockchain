@@ -44,10 +44,7 @@ object Name extends ScorexEncoder {
 
   val regexp = "[a-z]*"
 
-  implicit val apiEncoder: Encoder[Name] =
-    new Encoder[Name] {
-      final def apply(a: Name) = a.name.asJson
-    }
+  implicit val apiEncoder: Encoder[Name] = (a: Name) => a.name.asJson
 
   def check(name: String): Either[String, String] =
     if (name.trim.length < 3)
@@ -55,7 +52,7 @@ object Name extends ScorexEncoder {
     else if (name.trim.length >= maxSize)
       Left("Name must be less than " + (maxSize + 1) + " symbols!")
     else if (!name.trim.matches(regexp))
-      Left("Name must checked with regexp " + regexp.toString)
+      Left("Name must checked with regexp " + regexp)
     else
       Right(name.trim)
 
