@@ -1,7 +1,6 @@
 package techgen
 
 import akka.actor.{ActorRef, Props}
-import techgen.TechGenGenesisCreateApp.block
 import techgen.NoveViewHolder.NVHSettings
 import techgen.api.BDApiRoute
 import techgen.blocks.{BDBlock, BDBlockSerializer}
